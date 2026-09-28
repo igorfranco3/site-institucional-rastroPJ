@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rastro PJ — Histórico das empresas do Triângulo Mineiro, mês a mês</title>
+    <meta name="description" content="O Rastro PJ transforma as publicações mensais do CNPJ em histórico empresarial regional. Consulte alterações cadastrais com antes e depois, explore indicadores e acompanhe empresas dos 35 municípios do Triângulo Mineiro.">
+    <meta name="theme-color" content="#0B3D2E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap">
+    <link rel="stylesheet" href="assets/css/tokens.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/sections.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="brand" href="#topo" aria-label="Rastro PJ — página inicial">
+          <!-- PENDENTE: substituir por logotipo definitivo da marca -->
+          <span class="brand__symbol" aria-hidden="true">RP</span>
+          <strong>Rastro PJ</strong>
+          <span class="brand__pending" aria-hidden="true">Logo pendente</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Navegação principal">
+          <a href="#produto">Produto</a>
+          <a href="#como-funciona">Como funciona</a>
+          <a href="#para-quem">Para quem</a>
+          <a href="#faq">FAQ</a>
+          <a class="btn btn--on-brand" href="#demonstracao">Solicitar demonstração</a>
+        </nav>
+
+        <details class="mobile-menu">
+          <summary aria-label="Abrir menu de navegação">Menu</summary>
+          <nav aria-label="Navegação móvel">
+            <ul class="mobile-menu__list">
+              <li><a href="#produto">Produto</a></li>
+              <li><a href="#como-funciona">Como funciona</a></li>
+              <li><a href="#para-quem">Para quem</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a class="btn btn--on-brand" href="#demonstracao">Solicitar demonstração</a></li>
+            </ul>
+          </nav>
+        </details>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section id="topo" class="section hero">
+        <div class="container">
+          <div class="hero__grid">
+            <div class="hero__content">
+              <p class="eyebrow">Inteligência cadastral regional</p>
+              <h1>Acompanhe as mudanças das empresas do Triângulo Mineiro, mês a mês.</h1>
+              <p class="hero__lead">
+                Pesquise empresas, consulte alterações cadastrais com antes e depois e explore indicadores e mapas construídos a partir de dados públicos oficiais.
+              </p>
+              <div class="hero__actions">
+                <a class="btn btn--primary" href="#demonstracao">Solicitar demonstração</a>
+                <a class="btn btn--secondary" href="#produto">Conhecer o produto</a>
+              </div>
+              <ul class="trust-list hero__trust">
+                <li class="trust-item">35 municípios</li>
+                <li class="trust-item">13 competências no MVP</li>
+                <li class="trust-item">Fontes públicas e rastreáveis</li>
+              </ul>
+            </div>
+
+            <div class="hero__visual">
+              <figure class="screenshot screenshot--pendente">
+                <!-- PENDENTE: substituir por captura real em WebP/AVIF -->
+                <!--
+                <picture>
+                  <source srcset="assets/img/hero-dashboard.avif" type="image/avif">
+                  <source srcset="assets/img/hero-dashboard.webp" type="image/webp">
+                  <img src="assets/img/hero-dashboard.png"
+                       alt="Dashboard regional do Rastro PJ mostrando indicadores por competência, filtros por município e evolução mensal."
+                       width="1280" height="800">
+                </picture>
+                -->
+                <div class="screenshot__placeholder">
+                  <span class="badge">Captura pendente</span>
+                  <strong>Dashboard regional</strong>
+                  <span>Visualização da janela de 13 competências, com filtros por período, município e atividade.</span>
+                </div>
+                <figcaption>Prévia do dashboard — a captura definitiva será inserida antes da publicação.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="problema" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">O problema</p>
+            <h2>Consultar o estado atual não é o mesmo que acompanhar o histórico.</h2>
+            <p>As consultas convencionais mostram uma fotografia do momento. Acompanhar o que mudou exige guardar competências anteriores e comparar CNPJ por CNPJ, manualmente.</p>
+          </div>
+
+          <blockquote class="problem-quote">
+            &ldquo;Eu consigo consultar um fornecedor hoje, mas não consigo acompanhar o que mudou nele nos últimos meses.&rdquo;
+          </blockquote>
+
+          <div class="problem-grid">
+            <article class="problem-card">
+              <h3>Hoje, sem o Rastro PJ</h3>
+              <ul>
+                <li>Consultas isoladas, uma por CNPJ.</li>
+                <li>Conferência manual para descobrir se algo mudou.</li>
+                <li>Dificuldade para lembrar valores anteriores ou comparar competências.</li>
+                <li>Perguntas sem resposta objetiva: quando mudou, o que mudou, quanto mudou.</li>
+              </ul>
+            </article>
+            <article class="problem-card problem-card--brand">
+              <h3>Com o Rastro PJ</h3>
+              <ul>
+                <li>Histórico mensal reunido para toda uma carteira regional.</li>
+                <li>Comparação entre competências consecutivas com o valor anterior e o novo valor.</li>
+                <li>Evidência do antes e depois de cada alteração detectada.</li>
+                <li>Indicadores e mapas construídos a partir de fontes públicas rastreáveis.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="produto" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Produto</p>
+            <h2>O que você faz com o Rastro PJ</h2>
+            <p>Seis recursos que trabalham sobre o mesmo recorte regional e sobre o mesmo histórico validado.</p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <h3>Mudanças rastreáveis</h3>
+              <p>Veja o valor anterior, o novo valor e o intervalo em que a alteração foi detectada.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Pesquisa empresarial</h3>
+              <p>Encontre empresas por CNPJ, razão social ou nome fantasia e refine o recorte.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Visão regional</h3>
+              <p>Acompanhe indicadores, atividades e municípios ao longo da janela histórica.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Inteligência territorial</h3>
+              <p>Explore concentração e dinâmica dos estabelecimentos ativos no mapa.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Empresas monitoradas</h3>
+              <p>Mantenha uma lista de organizações relevantes para acompanhamento.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Dados públicos com contexto</h3>
+              <p>Consulte competência, fonte e critérios de qualidade associados aos resultados.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="como-funciona" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Como funciona</p>
+            <h2>Do dado público ao histórico consultável</h2>
+            <p>Quatro etapas separam a publicação mensal do CNPJ e o que aparece na tela do usuário.</p>
+          </div>
+
+          <ol class="steps-grid">
+            <li class="step-card">
+              <span class="step-card__number">Passo 1</span>
+              <h3>Dados públicos são preparados</h3>
+              <p>Competências mensais da Receita Federal e referências geográficas do IBGE passam por validação.</p>
+            </li>
+            <li class="step-card">
+              <span class="step-card__number">Passo 2</span>
+              <h3>As competências são comparadas</h3>
+              <p>O sistema identifica mudanças entre fotografias consecutivas.</p>
+            </li>
+            <li class="step-card">
+              <span class="step-card__number">Passo 3</span>
+              <h3>As evidências são organizadas</h3>
+              <p>Alterações, indicadores e localizações ficam disponíveis para pesquisa.</p>
+            </li>
+            <li class="step-card">
+              <span class="step-card__number">Passo 4</span>
+              <h3>O usuário explora e acompanha</h3>
+              <p>Dashboard, empresa, linha do tempo, mapa e monitoramento trabalham com o mesmo recorte.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="telas" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Demonstração</p>
+            <h2>As telas centrais do produto</h2>
+            <p>As capturas reais serão adicionadas antes da publicação. Enquanto isso, veja o papel de cada tela.</p>
+          </div>
+
+          <div class="screenshots">
+            <figure class="screenshot screenshot--pendente">
+              <!-- PENDENTE: substituir por captura real em WebP/AVIF -->
+              <!--
+              <picture>
+                <source srcset="assets/img/dashboard.avif" type="image/avif">
+                <source srcset="assets/img/dashboard.webp" type="image/webp">
+                <img src="assets/img/dashboard.png"
+                     alt="Dashboard regional com filtros por competência, município e atividade, métricas e ranking."
+                     width="1280" height="800" loading="lazy">
+              </picture>
+              -->
+              <div class="screenshot__placeholder">
+                <span class="badge">Captura pendente</span>
+                <strong>Dashboard regional</strong>
+                <span>Filtros por competência, município e atividade, com métricas, evolução e rankings.</span>
+              </div>
+              <figcaption>
+                Permite acompanhar indicadores por competência, município e atividade ao longo da janela histórica.
+              </figcaption>
+            </figure>
+
+            <figure class="screenshot screenshot--pendente">
+              <!-- PENDENTE: substituir por captura real em WebP/AVIF -->
+              <!--
+              <picture>
+                <source srcset="assets/img/mapa.avif" type="image/avif">
+                <source srcset="assets/img/mapa.webp" type="image/webp">
+                <img src="assets/img/mapa.png"
+                     alt="Mapa analítico regional com estabelecimentos ativos, indicadores sincronizados e filtros visíveis."
+                     width="1280" height="800" loading="lazy">
+              </picture>
+              -->
+              <div class="screenshot__placeholder">
+                <span class="badge">Captura pendente</span>
+                <strong>Mapa analítico</strong>
+                <span>Estabelecimentos ativos, indicadores e filtros sincronizados por competência selecionada.</span>
+              </div>
+              <figcaption>
+                Mostra concentração e dinâmica da presença cadastral. Não representa potencial de mercado nem faturamento.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="casos-de-uso" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Casos de uso</p>
+            <h2>Como diferentes áreas usam o Rastro PJ</h2>
+            <p>Cenários reais do dia a dia de quem precisa acompanhar empresas, sem depoimentos fabricados.</p>
+          </div>
+
+          <div class="use-case-grid">
+            <article class="use-case-card">
+              <h3>Financeiro</h3>
+              <p>Revisar mudanças cadastrais de clientes que compram a prazo.</p>
+            </article>
+            <article class="use-case-card">
+              <h3>Compras</h3>
+              <p>Acompanhar fornecedores e consultar alterações relevantes.</p>
+            </article>
+            <article class="use-case-card">
+              <h3>Contabilidade</h3>
+              <p>Pesquisar empresas e conferir a evolução cadastral registrada.</p>
+            </article>
+            <article class="use-case-card">
+              <h3>Comercial B2B</h3>
+              <p>Entender presença regional por município e atividade.</p>
+            </article>
+            <article class="use-case-card">
+              <h3>Consultoria e seguros</h3>
+              <p>Contextualizar empresas e setores antes de uma conversa.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="para-quem" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Para quem</p>
+            <h2>Público inicial do Rastro PJ</h2>
+            <p>Pequenas e médias empresas que vendem a prazo ou dependem de fornecedores e parceiros empresariais.</p>
+          </div>
+          <ul class="audience-list">
+            <li class="audience-chip">Profissionais administrativos e financeiros</li>
+            <li class="audience-chip">Escritórios de contabilidade</li>
+            <li class="audience-chip">Compradores e gestores de fornecedores</li>
+            <li class="audience-chip">Equipes comerciais B2B</li>
+            <li class="audience-chip">Corretores de seguros</li>
+            <li class="audience-chip">Consultorias empresariais</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="demonstracao" class="section">
+        <div class="container">
+          <div class="final-cta">
+            <p class="eyebrow eyebrow--on-brand">Chamada comercial</p>
+            <h2>Quer conhecer o Rastro PJ aplicado ao seu contexto?</h2>
+            <p>Solicite uma demonstração e conte quais empresas, municípios ou atividades você precisa acompanhar.</p>
+            <div class="final-cta__cta">
+              <!-- PENDENTE: destino do CTA (URL, e-mail ou WhatsApp oficial) -->
+              <a class="btn btn--pendente" aria-disabled="true">Solicitar demonstração</a>
+              <span class="badge">Pendente</span>
+            </div>
+            <p class="final-cta__note">Canal oficial de contato em definição.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Perguntas frequentes</p>
+            <h2>Dúvidas comuns sobre o Rastro PJ</h2>
+          </div>
+
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary>Os dados são atualizados em tempo real?</summary>
+              <div class="faq-item__body">
+                <p>Não. O Rastro PJ trabalha com competências mensais publicadas nas fontes oficiais.</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>O sistema informa o dia exato de uma mudança?</summary>
+              <div class="faq-item__body">
+                <p>Nem sempre. Em geral, a plataforma informa que a alteração foi detectada entre duas competências consecutivas. Datas explícitas da fonte são preservadas quando existem.</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>Qual região está disponível no MVP?</summary>
+              <div class="faq-item__body">
+                <p>O recorte atual reúne 35 municípios do Triângulo Mineiro.</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>Quais fontes são usadas?</summary>
+              <div class="faq-item__body">
+                <p>Dados abertos do CNPJ publicados pela Receita Federal e referências geográficas e demográficas do IBGE.</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>O Rastro PJ fornece score de crédito?</summary>
+              <div class="faq-item__body">
+                <p>Não. O produto organiza histórico e inteligência cadastral; ele não calcula score de crédito ou risco.</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>É possível acompanhar empresas específicas?</summary>
+              <div class="faq-item__body">
+                <p>Sim. Usuários autenticados podem adicionar e remover empresas da lista de monitoramento.</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>O mapa mostra a localização exata de todos os estabelecimentos?</summary>
+              <div class="faq-item__body">
+                <p>Não necessariamente. A interface informa se a localização veio de correspondência de endereço, aproximação por CEP ou não pôde ser localizada.</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>Como solicitar acesso ou uma demonstração?</summary>
+              <div class="faq-item__body">
+                <p>Pelo canal oficial que a equipe definir antes da publicação. <strong>Pendência aberta</strong> — o destino do botão será atualizado assim que confirmado.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-footer__grid">
+          <div>
+            <a class="brand" href="#topo">Rastro PJ</a>
+            <p class="site-footer__intro">
+              Histórico empresarial regional construído a partir das publicações mensais do CNPJ. Recorte inicial de 35 municípios do Triângulo Mineiro.
+            </p>
+          </div>
+          <div>
+            <h3>Navegar</h3>
+            <ul>
+              <li><a href="#produto">Produto</a></li>
+              <li><a href="#como-funciona">Como funciona</a></li>
+              <li><a href="#para-quem">Para quem</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#demonstracao">Solicitar demonstração</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Fontes</h3>
+            <ul>
+              <li>Dados abertos do CNPJ — Receita Federal</li>
+              <li>Referências geográficas e demográficas — IBGE</li>
+            </ul>
+            <p class="site-footer__intro">Atualização mensal por competência.</p>
+          </div>
+        </div>
+        <div class="site-footer__bottom">
+          <!-- PENDENTE: contato oficial e decisão sobre indicar que é projeto acadêmico -->
+          <p>&copy; Rastro PJ. Canal oficial de contato em definição.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

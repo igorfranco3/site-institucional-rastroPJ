@@ -1,0 +1,331 @@
+/* Botões */
+.btn {
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  display: inline-flex;
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-bold);
+  gap: 0.5rem;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0.75rem 1.2rem;
+  text-decoration: none;
+  transition: background var(--transition-base), color var(--transition-base),
+              border-color var(--transition-base);
+}
+
+.btn--primary {
+  background: var(--color-brand);
+  color: var(--color-text-on-brand);
+}
+.btn--primary:hover {
+  background: color-mix(in srgb, var(--color-brand) 85%, var(--color-shade));
+  color: var(--color-text-on-brand);
+}
+
+.btn--secondary {
+  background: var(--color-surface);
+  border-color: var(--color-brand);
+  color: var(--color-brand);
+}
+.btn--secondary:hover {
+  background: var(--color-brand-soft);
+  color: var(--color-brand);
+}
+
+.btn--on-brand {
+  background: var(--color-accent);
+  color: var(--color-text);
+}
+.btn--on-brand:hover {
+  background: color-mix(in srgb, var(--color-accent) 88%, var(--color-shade));
+  color: var(--color-text);
+}
+
+.btn--text {
+  background: transparent;
+  border-radius: 0;
+  color: var(--color-link);
+  min-height: 0;
+  padding: 0.25rem 0;
+}
+.btn--text:hover {
+  color: color-mix(in srgb, var(--color-link) 80%, var(--color-shade));
+  text-decoration: underline;
+}
+
+.btn--pendente {
+  background: var(--color-border);
+  color: var(--color-text-secondary);
+  cursor: default;
+}
+.btn--pendente:hover {
+  background: var(--color-border);
+  color: var(--color-text-secondary);
+}
+
+/* Badge */
+.badge {
+  background: var(--color-accent);
+  border-radius: var(--radius-pill);
+  color: var(--color-text);
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: var(--font-weight-heavy);
+  letter-spacing: 0.04em;
+  padding: 0.35rem 0.7rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.badge--neutral {
+  background: var(--color-brand-soft);
+  color: var(--color-brand);
+}
+
+/* Cards genéricos */
+.feature-card,
+.step-card,
+.use-case-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-5);
+}
+.feature-card h3,
+.step-card h3,
+.use-case-card h3 {
+  font-size: 1.15rem;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: -0.01em;
+}
+.feature-card p,
+.step-card p,
+.use-case-card p {
+  color: var(--color-text-secondary);
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
+.step-card { position: relative; }
+.step-card__number {
+  align-items: center;
+  align-self: start;
+  background: var(--color-brand-soft);
+  border-radius: var(--radius-pill);
+  color: var(--color-brand);
+  display: inline-flex;
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-heavy);
+  justify-content: center;
+  letter-spacing: 0.06em;
+  min-height: 28px;
+  padding: 0.3rem 0.75rem;
+  text-transform: uppercase;
+}
+
+/* Selo de destaques do hero */
+.trust-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.trust-item {
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  font-weight: var(--font-weight-semibold);
+}
+
+/* Chips de público */
+.audience-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.audience-chip {
+  background: var(--color-brand-soft);
+  border: 1px solid color-mix(in srgb, var(--color-brand-soft) 80%, var(--color-brand) 20%);
+  border-radius: var(--radius-pill);
+  color: var(--color-brand);
+  font-size: 0.9rem;
+  font-weight: var(--font-weight-bold);
+  padding: 0.55rem 0.95rem;
+}
+
+/* Cartão de métrica escuro (reutilizável) */
+.metric-card {
+  background: var(--color-metric-bg);
+  border-radius: var(--radius-lg);
+  color: var(--color-text-on-brand);
+  display: grid;
+  gap: 0.4rem;
+  padding: var(--space-5);
+}
+.metric-card__label {
+  color: var(--color-brand-soft);
+  font-size: var(--font-size-eyebrow);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-eyebrow);
+  text-transform: uppercase;
+}
+.metric-card__value {
+  font-size: 1.15rem;
+  font-weight: var(--font-weight-bold);
+}
+
+/* Captura do produto e placeholder */
+.screenshot {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  display: grid;
+  margin: 0;
+  overflow: hidden;
+}
+.screenshot img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+.screenshot figcaption {
+  border-top: 1px solid var(--color-border);
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  padding: var(--space-3) var(--space-4);
+}
+.screenshot--pendente .screenshot__placeholder {
+  align-items: center;
+  aspect-ratio: 16 / 10;
+  border: 2px dashed var(--color-border);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  justify-content: center;
+  margin: var(--space-4);
+  padding: var(--space-5);
+  text-align: center;
+}
+.screenshot--pendente .screenshot__placeholder strong {
+  color: var(--color-text);
+  font-size: 1.05rem;
+  font-weight: var(--font-weight-bold);
+}
+.screenshot--pendente .screenshot__placeholder span {
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  max-width: 32ch;
+}
+
+/* FAQ */
+.faq-list { display: grid; gap: 0.75rem; }
+.faq-item {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+.faq-item summary {
+  align-items: center;
+  color: var(--color-text);
+  cursor: pointer;
+  display: flex;
+  font-size: 1.02rem;
+  font-weight: var(--font-weight-bold);
+  gap: 0.75rem;
+  justify-content: space-between;
+  list-style: none;
+  padding: 1.1rem 1.25rem;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  border-bottom: 2px solid var(--color-text);
+  border-right: 2px solid var(--color-text);
+  content: "";
+  display: inline-block;
+  flex-shrink: 0;
+  height: 9px;
+  transform: rotate(45deg);
+  transition: transform var(--transition-base);
+  width: 9px;
+}
+.faq-item[open] summary::after { transform: rotate(-135deg); }
+.faq-item__body {
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  padding: 0 1.25rem 1.25rem;
+}
+.faq-item__body p { color: var(--color-text-secondary); }
+
+/* Menu mobile (details/summary) */
+.mobile-menu {
+  color: var(--color-text-on-brand);
+  position: relative;
+}
+.mobile-menu > summary {
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-on-brand);
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 0.95rem;
+  font-weight: var(--font-weight-bold);
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0.6rem 0.95rem;
+}
+.mobile-menu > summary::-webkit-details-marker { display: none; }
+.mobile-menu > summary::after {
+  border-bottom: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  content: "";
+  display: inline-block;
+  height: 7px;
+  transform: rotate(45deg);
+  transition: transform var(--transition-base);
+  width: 7px;
+}
+.mobile-menu[open] > summary::after { transform: rotate(-135deg); }
+.mobile-menu__list {
+  background: var(--color-brand);
+  border: 1px solid color-mix(in srgb, var(--color-text-on-brand) 20%, transparent);
+  border-radius: var(--radius-md);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+  display: grid;
+  gap: 0.15rem;
+  list-style: none;
+  margin: 0.5rem 0 0;
+  min-width: 240px;
+  padding: 0.6rem;
+  position: absolute;
+  right: 0;
+  z-index: 15;
+}
+.mobile-menu__list a {
+  border-radius: var(--radius-sm);
+  color: var(--color-text-on-brand);
+  display: block;
+  font-weight: var(--font-weight-semibold);
+  padding: 0.65rem 0.75rem;
+  text-decoration: none;
+}
+.mobile-menu__list a:hover {
+  background: color-mix(in srgb, var(--color-brand) 70%, var(--color-shade));
+  color: var(--color-text-on-brand);
+}
+.mobile-menu__list .btn {
+  margin-top: 0.35rem;
+  min-height: 40px;
+  width: 100%;
+}
